@@ -1,4 +1,76 @@
-<extends src="base-layout.html"></extends>
-<block name="content">
-  <h1>Acceuil</h1>
-</block>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>base-layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/main.js" type="module"></script>
+  </head>
+  <body>
+    <block name="content-pages">
+      <a href="index.html">Acceuil</a>
+      <a href="vin-blanc.html">Vin Blanc</a>
+      <a href="vin-rouge.html">Vin rouge</a>
+      <h1>Acceuil</h1>
+    </block>
+    <div class="container-header">
+      <div class="row">
+        <div class="col-6">burger-menu</div>
+        <div class="col-3 offset-2">logo-header</div>
+      </div>
+      <div class="row">
+        <div class="col-9">home-title</div>
+      </div>
+      <div class="row">
+        <div class="col-8 offset-4">Article-header</div>
+      </div>
+    </div>
+    <div class="container-month-selection">
+      <div class="row">
+        <div class="col-5">wine-selection-img</div>
+        <div class="col-7">article-wine-selection</div>
+      </div>
+    </div>
+    <div class="container-philosophy">
+      <div class="row">
+        <div class="col-11">article-philosophy</div>
+      </div>
+    </div>
+    <div class="container-team">
+      <div class="row">
+        <div class="col-7">article-team</div>
+        <div class="col-5">team-picture</div>
+      </div>
+    </div>
+    <div class="container-visit">
+      <div class="row">
+        <div class="col-12">cave-picture</div>
+        <div class="col-12">article-visit</div>
+      </div>
+    </div>
+    <div class="container-footer">
+      <div class="row">
+        <div class="col-6">localisation-infos</div>
+        <div class="col-4 offset-2">logo-footer</div>
+      </div>
+      <div class="row">
+        <div class="col-4">timetable</div>
+        <div class="col-5">newsletter</div>
+      </div>
+      <div class="row">
+        <div class="col-3">languages</div>
+        <div class="col-2 offset-1">gauilt-milleau-logo</div>
+        <div class="col-1 offset-1">bio-logo</div>
+        <div class="col-2 offset-1">contact</div>
+        <div class="col-12">last-infos</div>
+      </div>
+    </div>
+  </body>
+</html>
