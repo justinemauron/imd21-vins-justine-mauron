@@ -6,6 +6,7 @@
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img,
@@ -14,18 +15,61 @@ video {
 }
 body {
   background-color: #f4f4e4;
+  padding-top: 50px;
+}
+
+header {
+  background: #351021;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 10px 20px;
+  color: #f4f4e4;
+  z-index: 10;
+
+  .nav-menu-index i {
+    width: 24px;
+    color: #f4f4e4;
+  }
+}
+
+.header-language {
+  background: #f4f4e4;
+  display: flex;
+  padding: 5px 11px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-weight: 600;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header-logo {
+  position: absolute;
+  right: 80px;
 }
 
 .burger {
-  position: fixed;
-  margin-top: 30px;
   z-index: 1;
   width: 30px;
   height: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 80px;
 }
 
 .burger div {
-  position: absolute;
   width: 100%;
   height: 3px;
   background: #f4f4e4;
@@ -57,6 +101,20 @@ body {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.links-bg {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(244, 244, 228, 0.2);
+}
+
+.nav-menu-index {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -64,17 +122,21 @@ body {
   bottom: 0;
   left: 0;
   padding: 50px;
+  color: #f4f4e4;
+  font-family: "Source Code Pro";
+  font-size: 16px;
   background: #351021;
   opacity: 0;
   pointer-events: none;
   transform: translateY(0);
   transition: opacity 0.3s, transform 0.3s;
+  text-decoration: none;
 }
 
 .menu.is-active {
   opacity: 1;
   pointer-events: auto;
-  transform: translateY(60px);
+  transform: translateY(50px);
 }
 
 @import "bootstrap/scss/bootstrap-grid";
@@ -90,6 +152,63 @@ body {
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
 }*/
+
+.banner {
+  background-image: url(../img/background-illu-header.png);
+  background-size: cover;
+  padding: 90px;
+}
+
+.banner h1 {
+  color: #f4f4e4;
+  font-family: "Source Code Pro";
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+.intro-text-box {
+  background: #fff;
+  display: flex;
+  width: 734px;
+  height: 397px;
+  padding: 60px 95px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+.intro-text-box p {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+.intro-text-box .btn {
+  background: #351021;
+  display: flex;
+  height: 40px;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #f4f4e4;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+}
+
 .bottle-image img {
   max-width: 100%;
   display: block;
@@ -135,6 +254,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  font-weight: 600;
   background: #351021;
   color: #f4f4e4;
   border: none;
@@ -284,4 +404,42 @@ body {
   text-transform: uppercase;
   border: none;
   margin-top: 65px;
+}
+
+.visit-box {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(53, 16, 33, 1) 40%,
+    rgba(53, 16, 33, 1) 100%
+  );
+}
+
+.nav-wine-pages {
+  display: flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+  border: 1px solid #351021;
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+
+.nav-wine-pages p {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration-style: solid;
+}
+
+.nav-wine-pages a {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration-style: solid;
 }
