@@ -1,76 +1,104 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>base-layout</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/main.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="js/main.js" type="module"></script>
-  </head>
-  <body>
-    <block name="content-pages">
-      <a href="index.html">Acceuil</a>
-      <a href="vin-blanc.html">Vin Blanc</a>
-      <a href="vin-rouge.html">Vin rouge</a>
-      <h1>Acceuil</h1>
-    </block>
-    <div class="container-header">
-      <div class="row">
-        <div class="col-6">burger-menu</div>
-        <div class="col-3 offset-2">logo-header</div>
+<extends src="base-layout.html">
+  <block name="content">
+    <p>contenu de la page</p>
+  </block>
+</extends>
+<div class="selection-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-5">
+        <div class="bottle-image">
+          <img src="img/white-wine.png" alt="Bouteille de vin" />
+        </div>
       </div>
-      <div class="row">
-        <div class="col-9">home-title</div>
-      </div>
-      <div class="row">
-        <div class="col-8 offset-4">Article-header</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-8 offset-4 selection-text-box">
+            <h2><em>Sélection du Mois</em></h2>
+            <p>
+              Laissez-vous tenter par la finesse et la fraîcheur de notre vin
+              blanc, un nectar éclatant aux arômes de fleurs et de fruits.
+              Chaque gorgée révèle un équilibre parfait entre vivacité et
+              douceur, idéal pour sublimer vos moments de convivialité.
+            </p>
+            <div class="selection-btn-box">
+              <button class="btn btn-outline-custom">Tous nos vins</button>
+              <button class="btn btn-custom">Sélection</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container-month-selection">
-      <div class="row">
-        <div class="col-5">wine-selection-img</div>
-        <div class="col-7">article-wine-selection</div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-11">
+      <div class="philosophy-box">
+        <div class="col-6">
+          <h2>Notre Philosophie</h2>
+        </div>
+        <div class="col-8 offset-2">
+          <p>
+            La cave Hématie allie savoir-faire traditionnel et respect de la
+            nature, nous vous offrons des vins sans artifices, qui vibrent de
+            l’énergie du terroir. Nos vins naturels, sans ajout ni filtration,
+            dévoilent la pureté des cépages et la sincérité de chaque millésime,
+            pour des expériences gustatives aussi authentiques qu'inoubliables.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="container-philosophy">
-      <div class="row">
-        <div class="col-11">article-philosophy</div>
+  </div>
+</div>
+<div class="team-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-7 team-text-box">
+        <h2><em>Une histoire de partage</em></h2>
+        <p>
+          Vignerons passionnés et défenseurs des pratiques naturelles, les
+          vigneron.ne.s de la cave Hématie cultivent chaque vigne avec respect
+          et patience pour révéler le goût de leur terroir dans chaque
+          bouteille.
+        </p>
+          <button class="btn btn-outline-custom">Notre équipe</button>
+        </div>
       </div>
     </div>
-    <div class="container-team">
-      <div class="row">
-        <div class="col-7">article-team</div>
-        <div class="col-5">team-picture</div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-6">
+        <div class="team-image">
+          <img src="img/family.png" alt="Photo de l'équipe Hématie" />
+        </div>
       </div>
     </div>
-    <div class="container-visit">
-      <div class="row">
-        <div class="col-12">cave-picture</div>
-        <div class="col-12">article-visit</div>
+  </div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="visit-image">
+          <img src="img/cave.png" alt="image de la cave Hématie">
+        </div>
       </div>
     </div>
-    <div class="container-footer">
-      <div class="row">
-        <div class="col-6">localisation-infos</div>
-        <div class="col-4 offset-2">logo-footer</div>
-      </div>
-      <div class="row">
-        <div class="col-4">timetable</div>
-        <div class="col-5">newsletter</div>
-      </div>
-      <div class="row">
-        <div class="col-3">languages</div>
-        <div class="col-2 offset-1">gauilt-milleau-logo</div>
-        <div class="col-1 offset-1">bio-logo</div>
-        <div class="col-2 offset-1">contact</div>
-        <div class="col-12">last-infos</div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="visit-section">
+          <p>
+            Plongez au cœur de notre passion lors de la visite de notre cave. 
+            Entreprises, associations ou particuliers, vivez une expérience authentique : 
+            dégustez nos vins, explorez notre savoir-faire et laissez-vous inspirer par l'histoire 
+            de notre terroir. Réservez votre visite dès aujourd'hui !
+          </p>
+          <button class="btn btn-custom">Visite de la cave</button>
+        </div>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+  
