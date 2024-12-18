@@ -16,6 +16,7 @@ video {
 body {
   background-color: #f4f4e4;
   padding-top: 50px;
+  position: relative;
 }
 
 @import "bootstrap/scss/bootstrap-grid";
@@ -216,6 +217,8 @@ button {
   position: absolute;
   z-index: 1;
   margin-top: 134px;
+  width: 450px;
+  height: 448px;
 }
 .selection-text-box {
   background-color: #fff;
@@ -325,6 +328,7 @@ button {
   color: #351021;
   font-family: "Source Code Pro";
   margin-top: 89px;
+  z-index: 1;
 }
 
 .team-text-box h2 {
@@ -363,10 +367,15 @@ button {
 
 .team-image img {
   margin-top: -462px;
+  width: 709px;
+  height: 435px;
 }
 
 .visit-image img {
   margin-top: 89px;
+  width: 1115px;
+  height: 404px;
+  flex-shrink: 0;
 }
 
 .visit-section {
@@ -416,6 +425,7 @@ button {
     rgba(53, 16, 33, 1) 40%,
     rgba(53, 16, 33, 1) 100%
   );
+  padding-bottom: 86px;
 }
 
 .nav-wine-pages {
@@ -425,8 +435,7 @@ button {
   align-items: center;
   gap: 61px;
   border: 1px solid #351021;
-  margin-top: 110px;
-  margin-bottom: 110px;
+  margin: 89px 0;
 }
 
 .nav-wine-pages p {
@@ -624,4 +633,197 @@ span .topline {
   flex-shrink: 0;
   background-color: #f4f4e4;
   border: none;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125.794%; /* 17.611px */
+  letter-spacing: 2.38px;
+  gap: 13px;
+  margin-top: 24px;
+}
+
+.location a {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125.794%; /* 17.611px */
+  letter-spacing: 2.38px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+}
+
+.timetable {
+  color: #351021;
+  font-family: "Source Code Pro";
+}
+.timetable h2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125.794%; /* 20.127px */
+  letter-spacing: 2.72px;
+  margin-bottom: 17px;
+  margin-top: 46px;
+}
+
+.timetable .days {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 125.794%; /* 17.611px */
+  letter-spacing: 2.38px;
+}
+
+.timetable .hours {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125.794%; /* 17.611px */
+  letter-spacing: 2.38px;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.subscription h2 {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125.794%; /* 20.127px */
+  letter-spacing: 2.72px;
+  margin-top: 46px;
+  margin-bottom: 16px;
+}
+.form-container {
+  display: flex;
+  border: 1px solid #351021;
+  overflow: hidden;
+}
+
+.form-container input[type="email"] {
+  flex: 3;
+  border: none;
+  font-size: 14px;
+  color: #351021;
+  text-transform: uppercase;
+  padding-left: 10px;
+  background-color: #f4f4e4;
+  font-family: "Source Code Pro";
+}
+
+.form-container input[type="email"]::placeholder {
+  opacity: 0.24;
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.form-container input:focus {
+  outline: none;
+}
+
+.form-container button {
+  display: flex;
+  width: 166px;
+  height: 35px;
+  padding: 14px 27px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #f4f4e4;
+  cursor: pointer;
+  font-family: "Source Code Pro";
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #351021;
+  border: none;
+}
+
+footer .language {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 125.794%; /* 17.611px */
+  letter-spacing: 2.38px;
+  margin-top: 47px;
+}
+
+.gault {
+  margin-top: 20px;
+}
+
+.bio {
+  margin-top: 5px;
+}
+
+footer .socials {
+  margin-top: 5px;
+  display: flex;
+  width: 166px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+footer .socials-icon {
+  color: #351021;
+  font-family: "Font Awesome 6 Brands";
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  align-self: stretch;
+}
+
+.socials h2 {
+  color: #351021;
+  text-align: right;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125.794%; /* 20.127px */
+  letter-spacing: 2.72px;
+}
+
+footer .last-infos {
+  color: #f4f4e4;
+  font-family: "Source Code Pro";
+  font-size: 14px;
+  line-height: 125.794%; /* 17.611px */
+  background-color: #351021;
+  display: flex;
+  gap: 129px;
+}
+
+.last-infos .left {
+  display: flex;
+  width: 642px;
+  align-items: center;
+  gap: 16px;
+  text-decoration: underline;
+}
+
+.last-infos-box {
+  background-color: #351021;
+  padding: 10px 0;
+  margin-top: 29px;
+}
+
+footer {
+  background-color: #f4f4e4;
+  padding-top: 47px;
 }

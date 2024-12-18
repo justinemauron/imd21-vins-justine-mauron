@@ -63,6 +63,7 @@
         </div>
       </div>
     </div>
+    <block name="content"></block>
     <footer>
       <div class="container">
         <div class="row">
@@ -85,14 +86,16 @@
             <h2>
               <em>Vente / Dégustation</em>
             </h2>
-            <p class="hours">
-              <span class="days">Me-Ve:</span><br>
-              9h30-12h / 14h30-17h30
-            </p>
-            <p class="hours">
-              <span class="days">Sa:</span><br>
-              9h30-15h30
-            </p>
+            <div class="schedule">
+              <p class="hours">
+                <span class="days">Me-Ve:</span><br>
+                9h30-12h / 14h30-17h30
+              </p>
+              <p class="hours">
+                <span class="days">Sa:</span><br>
+                9h30-15h30
+              </p>
+            </div>
           </div>
           <div class="col-5 subscription">
             <h2><em>Newsletter</em> - <br>Cave Hématie</h2>
@@ -116,21 +119,27 @@
           </div>
           <div class="col-2 offset-2 socials">
             <h2>Suivez-Nous</h2>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
+            <div class="socials-icon">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-7 last-infos">
-            <p>Protection des données / cookies</p>
-            <p>© 2024 Cave Hématie. Tous droits réservés</p>
+      <div class="last-infos-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 last-infos">
+              <div class="last-infos left">
+                <p>Protection des données / cookies</p>
+                <p>Conditions générales de vente</p>
+              </div>
+              <p class="last-infos right">© 2024 Cave Hématie. Tous droits réservés</p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
-    <block name="container-footer"></block>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
