@@ -18,6 +18,8 @@ body {
   padding-top: 50px;
 }
 
+@import "bootstrap/scss/bootstrap-grid";
+
 header {
   background: #351021;
   position: fixed;
@@ -47,7 +49,7 @@ header {
   color: #351021;
   font-family: "Source Code Pro";
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 button {
@@ -138,8 +140,6 @@ button {
   pointer-events: auto;
   transform: translateY(50px);
 }
-
-@import "bootstrap/scss/bootstrap-grid";
 
 /* .row + .row {
   margin-top: 16px;
@@ -302,8 +302,9 @@ button {
   font-weight: 600;
   line-height: 48px;
   text-transform: uppercase;
-  padding-left: 70px;
   padding-bottom: 23px;
+  padding-left: 135px;
+  white-space: nowrap;
 }
 
 .philosophy-box p {
@@ -442,4 +443,184 @@ button {
   font-size: 16px;
   font-weight: 500;
   text-decoration-style: solid;
+}
+
+.wine-presentation-box {
+  background-color: #fff;
+  padding-top: 59px;
+  padding-bottom: 89px;
+  margin-bottom: 89px;
+}
+
+.wine-presentation-box h3 {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.wine-presentation-box h1 {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+}
+
+.left-image {
+  margin-top: 90px;
+}
+
+.right-image {
+  margin-top: 90px;
+}
+
+.center-image {
+  margin-top: -90px;
+}
+
+.wine-description-btn .btn {
+  color: #f4f4e4;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  width: 166px;
+  height: 52px;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #351021;
+  border-radius: none;
+  border: none;
+  margin-top: 63px;
+  margin-bottom: 59px;
+}
+
+.test-col {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding-bottom: 23px;
+}
+
+.colone-title {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.colone-text {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+}
+
+.wine-info {
+  background-image: url(../img/background-illu-wine-page.png);
+  background-position: 100%;
+}
+
+span .topline {
+  padding-top: 63px;
+}
+
+.wine-info .btn {
+  color: #f4f4e4;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #351021;
+  border: none;
+  margin: auto;
+  margin-top: 63px;
+  margin-bottom: 59px;
+}
+
+.event-box {
+  margin-top: 89px;
+}
+
+.event-section-text {
+  color: #f4f4e4;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+}
+
+.baril-image img {
+  position: absolute;
+  z-index: 1;
+}
+
+.event-box {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 27%,
+    rgba(53, 16, 33, 1) 27%,
+    rgba(53, 16, 33, 1) 100%
+  );
+  padding-bottom: 63px;
+}
+
+.event-section {
+  background-color: #351021;
+}
+
+.event-section .title {
+  color: #f4f4e4;
+  font-family: "Source Code Pro";
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 63px;
+  background-color: #351021;
+}
+
+.event-section .text {
+  color: #f4f4e4;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  margin-top: 47px;
+  margin-bottom: 72px;
+}
+
+.event-section .btn {
+  color: #351021;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  width: 260px;
+  height: 52px;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  flex-shrink: 0;
+  background-color: #f4f4e4;
+  border: none;
 }
