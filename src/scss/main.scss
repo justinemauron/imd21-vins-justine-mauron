@@ -53,6 +53,16 @@ header {
   font-size: 12px;
 }
 
+.header-language .french:hover {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.header-language .deutsch:hover {
+  font-style: italic;
+  font-weight: 700;
+}
+
 button {
   cursor: pointer;
 }
@@ -110,12 +120,21 @@ button {
   border-bottom: 1px solid rgba(244, 244, 228, 0.2);
 }
 
+.links-bg:hover {
+  font-style: italic;
+  font-size: 17px;
+}
+
 .nav-menu-index {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 40px;
+}
+
+.nav-menu-index i:hover {
+  font-size: 17px;
 }
 
 .menu {
@@ -210,6 +229,12 @@ button {
   border: none;
 }
 
+.intro-text-box .btn:hover {
+  background: #f4f4e4;
+  color: #351021;
+  font-style: italic;
+}
+
 .bottle-image img {
   max-width: 100%;
   display: block;
@@ -263,6 +288,13 @@ button {
   border: none;
   text-transform: uppercase;
 }
+
+.selection-text-box .btn-custom:hover {
+  background: #f4f4e4;
+  color: #351021;
+  font-style: italic;
+}
+
 .selection-text-box .btn-outline-custom {
   color: #351021;
   font-family: "Source Code Pro";
@@ -277,6 +309,12 @@ button {
   gap: 10px;
   border: 1px solid #351021;
   background-color: transparent;
+}
+
+.selection-text-box .btn-outline-custom:hover {
+  border: 1px solid #351021;
+  background: #f4f4e4;
+  font-style: italic;
 }
 
 .selection-btn-box {
@@ -365,6 +403,12 @@ button {
   text-transform: uppercase;
 }
 
+.team-text-box .btn:hover {
+  border: 1px solid #351021;
+  background: #f4f4e4;
+  font-style: italic;
+}
+
 .team-image img {
   margin-top: -462px;
   width: 709px;
@@ -416,6 +460,11 @@ button {
   margin-top: 65px;
 }
 
+.visit-section .btn:hover {
+  background-color: #f4f4e4;
+  color: #351021;
+}
+
 .visit-box {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -452,6 +501,11 @@ button {
   font-size: 16px;
   font-weight: 500;
   text-decoration-style: solid;
+}
+
+.nav-wine-pages a:hover {
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .wine-presentation-box {
@@ -566,6 +620,11 @@ span .topline {
   margin-bottom: 59px;
 }
 
+.wine-info .btn:hover {
+  background: #f4f4e4;
+  color: #351021;
+  font-style: italic;
+}
 .event-box {
   margin-top: 89px;
 }
@@ -643,6 +702,13 @@ span .topline {
   border: none;
 }
 
+.event-section .btn:hover {
+  font-style: italic;
+  background-color: #351021;
+  color: #f4f4e4;
+  border: 1px solid #f4f4e4;
+}
+
 .location {
   display: flex;
   flex-direction: column;
@@ -667,6 +733,10 @@ span .topline {
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-underline-position: from-font;
+}
+
+.location a:hover {
+  font-style: italic;
 }
 
 .timetable {
@@ -759,6 +829,13 @@ span .topline {
   border: none;
 }
 
+.form-container button:hover {
+  border: 1px solid #351021;
+  color: #351021;
+  background-color: #f4f4e4;
+  font-style: italic;
+}
+
 footer .language {
   color: #351021;
   font-family: "Source Code Pro";
@@ -767,6 +844,10 @@ footer .language {
   line-height: 125.794%; /* 17.611px */
   letter-spacing: 2.38px;
   margin-top: 47px;
+}
+
+footer .language:hover {
+  font-style: italic;
 }
 
 .gault {
